@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {},
+    "fmt": {
+        "lineWidth": 120,
+        "useTabs": false,
+        "indentWidth": 4
+    },
+    "lint": {
+        "rules": {
+            "tags": ["recommended"]
+        }
+    },
+    "imports": {
+        "@aws-sdk/client-kms": "npm:@aws-sdk/client-kms@^3.716.0",
+        "@aws-sdk/client-s3": "npm:@aws-sdk/client-s3@^3.717.0",
+        "ioredis": "npm:ioredis@^5.4.2",
+        "mysql2": "npm:mysql2@^3.11.5"
+    },
+    "tasks": {
+        "dev": "deno run --allow-env --allow-read --allow-write --allow-net --allow-sys"
+    }
+}
